@@ -2,10 +2,11 @@ import React from 'react';
 import Logo from "../../assets/images/logo.svg"
 import { Link } from 'react-router-dom';
 import CountryDropDown from '../CountryDropDown/CountryDropDown';
-import { IoIosSearch } from "react-icons/io";
 import Button from '@mui/material/Button';
 import { FiUser } from "react-icons/fi";
 import { IoBagOutline } from "react-icons/io5";
+import SearchBox from './SearchBox/SearchBox';
+import Navigation from './Navigation/Navigation';
 
 
 const Header = () => {
@@ -27,10 +28,7 @@ const Header = () => {
                             <CountryDropDown />
 
                             {/* header search start */}
-                            <div className="headerSearch ml-3">
-                                <input type="text" name="" id="" placeholder='search for products...' />
-                                <Button> <IoIosSearch /></Button>
-                            </div>
+                            <SearchBox />
                             {/* header search end */}
 
 
@@ -52,6 +50,9 @@ const Header = () => {
                 </div>
 
             </header>
+
+            
+           <Navigation/>
         </div>
     );
 };
