@@ -7,9 +7,15 @@ import { FiUser } from "react-icons/fi";
 import { IoBagOutline } from "react-icons/io5";
 import SearchBox from './SearchBox/SearchBox';
 import Navigation from './Navigation/Navigation';
+import { useContext } from 'react';
+import { MyContext } from '../../App';
+
 
 
 const Header = () => {
+
+    const context = useContext(MyContext)
+
     return (
         <div className='headerWrapper'>
             <div className='top-strip bg-blue'>
@@ -25,7 +31,11 @@ const Header = () => {
                             <Link to={'/'}>   <img src={Logo} alt="logo image" /></Link>
                         </div>
                         <div className='col-sm-10 d-flex align-items-center part2'>
-                            <CountryDropDown />
+
+                            {
+                                context.countryList.length !== 0 && <CountryDropDown />
+                            }
+
 
                             {/* header search start */}
                             <SearchBox />
@@ -51,8 +61,8 @@ const Header = () => {
 
             </header>
 
-            
-           <Navigation/>
+
+            <Navigation />
         </div>
     );
 };
