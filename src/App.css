@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css');
 
 * {
   margin: 0px;
@@ -48,7 +50,6 @@ body {
 
 .headerWrapper {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding-bottom: 10px;
 }
 
 .headerWrapper .top-strip {
@@ -251,6 +252,48 @@ nav .navPart2 {
   flex: 0 0 80%;
 }
 
+nav .navPart1 .catWrapper {
+  position: relative;
+}
+
+nav .navPart1 .catWrapper .sideBarNav {
+  width: 100%;
+  height: 0px;
+  opacity: 0;
+  background: #fff;
+  position: absolute;
+  top: 136%;
+  left: 0px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px 0px;
+  transition: all 0.2s ease-in-out;
+  visibility: hidden;
+  z-index: 100;
+}
+
+nav .navPart1 .catWrapper .sideBarNav.open {
+  height: auto;
+  opacity: 1;
+  visibility: inherit;
+}
+
+nav .navPart1 .catWrapper .sideBarNav ul li {
+  width: 100%;
+  list-style: none;
+  padding: 0px 15px;
+}
+
+nav .navPart1 .catWrapper .sideBarNav ul li button {
+  color: #000;
+  width: 100%;
+  justify-content: flex-start;
+  text-transform: capitalize;
+}
+
+nav .navPart1 .catWrapper .sideBarNav ul li button:hover {
+  background: transparent;
+}
+
 nav .allCatTab {
   background: #2bbef9;
   padding: 10px 15px;
@@ -281,6 +324,10 @@ nav .navPart2 ul {
   margin-bottom: 0px;
 }
 
+nav .navPart2 ul li {
+  padding-bottom: 20px;
+}
+
 nav .navPart2 ul li a {
   text-decoration: none;
 }
@@ -305,4 +352,80 @@ nav .navPart2 ul li a svg {
 nav .navPart2 ul li a:hover {
   background: #f0faff;
   color: #2bbef9;
+}
+
+nav .navPart2 ul li {
+  position: relative;
+}
+
+nav .navPart2 ul li .subMenu {
+  position: absolute;
+  top: 150%;
+  left: 0px;
+  min-width: 200px;
+  background: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+  z-index: 100;
+}
+
+nav .navPart2 ul li .subMenu a {
+  display: block;
+  width: 100%;
+}
+
+nav .navPart2 ul li .subMenu a button {
+  width: 100%;
+  justify-content: flex-start;
+  border-radius: 0px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+nav .navPart2 ul li .subMenu a button:hover {
+  background: #f1f1f1;
+}
+
+nav .navPart2 ul li:hover .subMenu {
+  opacity: 1;
+  visibility: inherit;
+  top: 100%;
+}
+
+.homeBannerSection {
+  position: relative;
+  overflow: hidden;
+}
+
+.homeBannerSection .slick-arrow {
+  position: absolute;
+  top: 45%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #000;
+  border-radius: 100%;
+  font-family: FontAwesome !important;
+}
+
+.homeBannerSection .slick-arrow.slick-next {
+  right: 25px;
+}
+
+.homeBannerSection .slick-arrow.slick-prev {
+  left: 25px;
+}
+
+.homeBannerSection .slick-arrow.slick-next::before {
+  font-family: FontAwesome !important;
+  color: #fff;
+}
+
+.homeBannerSection .slick-arrow.slick-prev::before {
+  font-family: FontAwesome !important;
+  color: #fff;
 }
