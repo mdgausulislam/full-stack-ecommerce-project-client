@@ -1,9 +1,7 @@
 import React from 'react';
 import Slider from "react-slick";
-import banner1 from '../../assets/images/banner1.jpg'
-import banner2 from '../../assets/images/banner2.jpg'
-import banner3 from '../../assets/images/banner3.jpg'
-import banner4 from '../../assets/images/banner4.jpg'
+import banner1 from '../../assets/images/slider-1.png'
+import banner2 from '../../assets/images/slider-2.png'
 
 const HomeBanner = () => {
     var settings = {
@@ -23,12 +21,6 @@ const HomeBanner = () => {
                 </div>
                 <div className='item'>
                     <img src={banner2} alt="" className='w-100' />
-                </div>
-                <div className='item'>
-                    <img src={banner3} alt="" className='w-100' />
-                </div>
-                <div className='item'>
-                    <img src={banner4} alt="" className='w-100' />
                 </div>
             </Slider>
 
