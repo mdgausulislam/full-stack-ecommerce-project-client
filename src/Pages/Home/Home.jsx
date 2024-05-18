@@ -102,7 +102,6 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-
             <NewsLetter />
         </div>
     );
