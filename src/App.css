@@ -2,6 +2,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css');
 
+
 * {
   margin: 0px;
   padding: 0px;
@@ -11,6 +12,11 @@
 body {
   font-family: 'Lato', sans-serif;
   font-size: 22px;
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  padding: 0px 45px;
 }
 
 .cursor {
@@ -509,9 +515,10 @@ nav .navPart2 ul li:hover .subMenu {
   overflow: hidden;
 }
 
-.productRow .hd {
+.hd {
   font-size: 20px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 
@@ -530,6 +537,8 @@ nav .navPart2 ul li:hover .subMenu {
 .viewAllBtn svg {
   font-size: 20px;
 }
+
+
 
 
 /* best seller product show */
@@ -640,6 +649,103 @@ nav .navPart2 ul li:hover .subMenu {
   border: 1px solid rgba(0, 0, 0, 0.1) !important;
 }
 
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 45%;
+  z-index: 100 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px !important;
+  height: 30px !important;
+  background: #fff;
+  border-radius: 100%;
+  font-family: FontAwesome !important;
+  font-weight: bold;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 12%), 0 1px 2px rgba(0, 0, 0, 24%);
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 15px !important;
+  border-radius: 100% !important;
+}
+
+
+.swiper-button-prev {
+  left: 0px;
+}
+
+.swiper-button-next {
+  right: 0px;
+}
+
 .swiper {
-  padding-right: 1px !important;
+  padding-right: 2px !important;
+}
+
+
+
+
+/* homecategory css  */
+.homeCategory {
+  padding: 35px 0px;
+}
+
+.homeCategory .swiper {
+  overflow: inherit !important;
+}
+
+.homeCategory .swiper .item {
+  padding: 15px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.homeCategory .swiper .item img {
+  width: 80%;
+}
+
+.homeCategory .swiper-button-prev,
+.homeCategory .swiper-button-next {
+  top: -30px !important;
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.homeCategory .swiper-button-prev {
+  right: 68px !important;
+  left: inherit !important;
+}
+
+.homeCategory .swiper-button-prev::after,
+.homeCategory .swiper-button-next::after {
+  font-size: 12px !important;
+}
+
+
+/* new products */
+
+.productRow2 {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.productRow2 .productItem {
+  width: 24%;
+  overflow: hidden;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bannerSec {
+  gap: 10px;
+}
+
+.sticky {
+  position: sticky;
+  top: 10px;
+  z-index: 100;
 }
