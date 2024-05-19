@@ -1,0 +1,35 @@
+.homeCategory {
+    padding: 35px 0px;
+}
+
+.homeCategory .swiper {
+    overflow: inherit !important;
+}
+
+.homeCategory .swiper .item {
+    padding: 15px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.homeCategory .swiper .item img {
+    width: 80%;
+}
+
+.homeCategory .swiper-button-prev,
+.homeCategory .swiper-button-next {
+    top: -30px !important;
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.homeCategory .swiper-button-prev {
+    right: 68px !important;
+    left: inherit !important;
+}
+
+.homeCategory .swiper-button-prev::after,
+.homeCategory .swiper-button-next::after {
+    font-size: 12px !important;
+}

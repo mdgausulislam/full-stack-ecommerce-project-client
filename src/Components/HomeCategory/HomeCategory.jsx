@@ -4,6 +4,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import homecategoryimg1 from '../../assets/images/category image/cat-9.png'
+import './Homecategory.css'
 
 const HomeCategory = () => {
 
@@ -45,7 +46,7 @@ const HomeCategory = () => {
                     {
                         itemBg?.map((item, index) => {
                             return (
-                                <SwiperSlide>
+                                <SwiperSlide key={index}>
                                     <div className="item text-center cursor" style={{ background: item }}>
                                         <img src={homecategoryimg1} alt="" />
                                         <h6>Red Apple</h6>

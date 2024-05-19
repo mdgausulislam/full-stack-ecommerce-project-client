@@ -1,0 +1,174 @@
+.close_ {
+    position: absolute !important;
+    top: 10px;
+    right: 10px;
+    color: #000;
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.close_ svg {
+    font-size: 21px;
+}
+
+.productModal .MuiPaper-elevation {
+    padding: 25px;
+    position: relative;
+    max-width: 900px !important;
+    width: 900px !important;
+}
+
+.productModal h4 {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+.productZoom {
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.productZoom .badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.zoomSliderBig {
+    width: 100% !important;
+}
+
+
+.zoomSlider {
+    padding-top: 30px;
+}
+
+.zoomSlider .slick-slide {
+    padding-right: 20px !important;
+}
+
+.zoomSlider * {
+    outline: none !important;
+}
+
+.zoomSlider .item {
+    border: 2px solid transparent !important;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.zoomSlider .slick-current .item {
+    border: 2px solid #3bb77e !important;
+}
+
+.zoomSlider .slick-arrow {
+    top: 55% !important;
+    zoom: 80% !important;
+}
+
+.zoomSlider .slick-arrow.slick-next {
+    right: -2% !important;
+}
+
+.zoomSlider .slick-arrow.slick-prev {
+    left: -5% !important;
+}
+
+
+.info .oldPrice {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.2);
+    text-decoration: line-through;
+}
+
+.info .netPrice {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.badge.bg-success {
+    background: #e5f8ed !important;
+    color: #16b858 !important;
+}
+
+.badge {
+    display: inline-block;
+    padding: 7px 10px;
+}
+
+.btn-blue {
+    background: #233a95 !important;
+    color: #fff !important;
+    text-transform: capitalize !important;
+}
+
+.btn-big {
+    font-size: 15px !important;
+    padding: 7px 35px !important;
+    min-width: auto !important;
+}
+
+.btn-round {
+    border-radius: 30px !important;
+}
+
+.quantityDropDown {
+    width: 150px;
+    gap: 10px;
+}
+
+.quantityDropDown button {
+    min-height: 40px !important;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+    background: #edeef5 !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    color: #000;
+}
+
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+    min-width: 40px !important;
+}
+
+.quantityDropDown button svg {
+    color: #000;
+}
+
+.quantityDropDown input {
+    width: 30px;
+    border: 0px;
+    background: transparent;
+    outline: none;
+    text-align: center;
+}
+
+button {
+    text-transform: capitalize !important;
+}
+
+.btn-sml {
+    font-size: 11px !important;
+    color: #000 !important;
+    text-transform: capitalize !important;
+}
+
+.btn-sml svg {
+    font-size: 15px !important;
+}
+
+.productModal .actions button {
+    color: #000 !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 10px !important;
+}
