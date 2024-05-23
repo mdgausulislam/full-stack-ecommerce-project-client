@@ -1,0 +1,76 @@
+.section {
+    padding: 45px 0px;
+}
+
+.text-light {
+    color: #8b8b8b !important;
+}
+
+.productDetails .hd {
+    font-size: 26px;
+}
+
+.productDetails .oldPrice {
+    font-size: 20px;
+}
+
+.productDetails .netPrice {
+    font-size: 22px;
+}
+
+
+/* product size */
+.productSize {
+    width: 100%;
+    height: auto;
+    padding: 25px 0px;
+}
+
+.productSize ul li {
+    margin-right: 10px !important;
+}
+
+.productSize ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px !important;
+    cursor: pointer;
+    text-decoration: none !important;
+    color: #000;
+    font-size: 14px !important;
+    transition: all 0.1s ease-in-out;
+}
+
+.productSize ul li a.active {
+    background: #7a55c1 !important;
+    color: #fff !important;
+}
+
+
+.productDetails .btn-circle {
+    border-radius: 50% !important;
+    min-width: 40px !important;
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #000;
+    background: #edeef5;
+    padding: 5px !important;
+}
+
+.productDetails .btn-circle svg {
+    color: #000;
+    opacity: 0.8;
+    font-size: 20px;
+}
+
+.productDetails .btn-circle:hover {
+    background: #7a55c1 !important;
+}
+
+.productDetails .btn-circle svg:hover {
+    color: #fff;
+}

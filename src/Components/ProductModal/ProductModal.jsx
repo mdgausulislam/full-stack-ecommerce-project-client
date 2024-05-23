@@ -8,6 +8,7 @@ import { IoIosHeartEmpty } from "react-icons/io";
 import { LuArrowUpDown } from "react-icons/lu";
 import ProductZoom from '../ProductZoom/ProductZoom';
 import { MyContext } from '../../App';
+import { BsCartFill } from 'react-icons/bs';
 
 
 const ProductModal = (props) => {
@@ -25,14 +26,12 @@ const ProductModal = (props) => {
                     </div>
                     <div className="d-flex align-items-center mr-4">
                         <Rating name="read-only" value={4.5} readOnly size="small" precision={0.5} />
-                        <span className='ml-2'>I review <br /></span>
+                        <span className='ml-2'>1 review <br /></span>
                     </div>
                     <div className="d-flex align-items-center mr-4">
                         <span>SKU:</span>
                         <span className='ml-2'>SOBFA7 <br /></span>
                     </div>
-
-
                 </div>
                 <hr />
                 <div className="row mt-2 productDetailModal">
@@ -52,16 +51,14 @@ const ProductModal = (props) => {
 
                         <div className="d-flex align-items-center">
                             <QuantityBox />
-                            <Button className='btn-blue btn-big btn-round ml-3'>Add to cart</Button>
+                            <Button className='btn-blue btn-big btn-round ml-3'><BsCartFill /> &nbsp; Add to cart</Button>
                         </div>
 
                         <div className="d-flex align-items-center mt-5 actions">
                             <Button className='btn-round btn-sml' variant="outlined"><IoIosHeartEmpty /> &nbsp;  ADD TO WISHLIST</Button>
                             <Button className='btn-round btn-sml ml-4' variant="outlined"><LuArrowUpDown /> &nbsp;  COMPARE</Button>
                         </div>
-
                         <hr />
-
 
                     </div>
                 </div>
