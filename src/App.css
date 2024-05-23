@@ -29,7 +29,7 @@ body {
 
 
 .bg-blue {
-  background: #233a95;
+  background: #7a55c1;
 }
 
 
@@ -340,7 +340,7 @@ nav .navPart1 .catWrapper .sideBarNav ul li:hover .subMenu button {
 /* category section */
 
 nav .allCatTab {
-  background: #2bbef9;
+  background: #7a55c1;
   padding: 10px 15px;
   border-radius: 30px;
 }
@@ -350,7 +350,7 @@ nav .allCatTab * {
 }
 
 nav .allCatTab:hover {
-  background: #2bbef9;
+  background: #7a55c1;
 }
 
 nav .allCatTab .text {
@@ -396,7 +396,7 @@ nav .navPart2 ul li a svg {
 
 nav .navPart2 ul li a:hover {
   background: #f0faff;
-  color: #2bbef9;
+  color: #7a55c1;
 }
 
 nav .navPart2 ul li {
@@ -491,7 +491,7 @@ nav .navPart2 ul li:hover .subMenu {
 }
 
 .badge-primary {
-  background: #2bbef9 !important;
+  background: #7a55c1 !important;
 }
 
 .productItem .action {
@@ -527,7 +527,7 @@ nav .navPart2 ul li:hover .subMenu {
 }
 
 .productItem .action button:hover {
-  background: #233a95 !important;
+  background: #7a55c1 !important;
 }
 
 .productItem .action button:hover svg {
@@ -554,8 +554,7 @@ nav .navPart2 ul li:hover .subMenu {
 .productItem:hover {
   transform: scale(1);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  border: none;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 

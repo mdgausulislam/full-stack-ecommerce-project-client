@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Rating from '@mui/material/Rating';
 import { AiOutlineFullscreen } from "react-icons/ai";
 import { FaRegHeart } from "react-icons/fa";
@@ -10,22 +10,20 @@ import productImg5 from "../../assets/images/product img/5.PNG"
 import { Button } from '@mui/material';
 import ProductModal from '../ProductModal/ProductModal';
 import './ProductItem.css'
+import { MyContext } from '../../App';
 
 
-const ProductItem = () => {
+const ProductItem = (props) => {
 
-    const [isOpenProductModal, setisOpenProductModal] = useState(false)
+    const context = useContext(MyContext)
 
     const viewProductDetails = (id) => {
-        setisOpenProductModal(true)
+       context.setisOpenProductModal(true)
     }
-
-    const closeProductModal = () => {
-        setisOpenProductModal(false)
-    }
+    
     return (
         <>
-            <div className="item productItem">
+            <div className={`item productItem ${props.itemVIew}`}>
                 <div className="imgWrapper">
                     <img src={productImg1} alt="product Imgage" className='w-100' />
                     <span className="badge badge-primary">26%</span>
@@ -46,9 +44,7 @@ const ProductItem = () => {
                 </div>
             </div>
 
-            {
-                isOpenProductModal === true && <ProductModal closeProductModal={closeProductModal} />
-            }
+
 
             {/*  */}
         </>
