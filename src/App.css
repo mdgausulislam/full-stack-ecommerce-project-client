@@ -28,8 +28,46 @@ body {
 }
 
 
+
+.btn-blue {
+  background: #7a55c1;
+  color: #fff !important;
+  text-transform: capitalize !important;
+}
+
+.btn-blue:hover {
+  background: #7a55c1 !important;
+}
+
+.btn-blue svg {
+  font-size: 22px !important;
+}
+
 .bg-blue {
   background: #7a55c1;
+}
+
+.text-blue {
+  color: #7a55c1 !important;
+}
+
+.bg-red {
+  background: #ed174a !important;
+}
+
+.text-red {
+  color: #ed174a !important;
+}
+
+.btn-big {
+  font-size: 15px !important;
+  padding: 7px 30px !important;
+  min-width: auto !important;
+  font-weight: bold !important;
+}
+
+.btn-round {
+  border-radius: 30px !important;
 }
 
 
@@ -438,6 +476,11 @@ nav .navPart2 ul li:hover .subMenu {
   top: 100%;
 }
 
+
+
+
+
+
 /* products section */
 .homeProducts {
   padding: 25px 0px;
@@ -472,126 +515,46 @@ nav .navPart2 ul li:hover .subMenu {
   font-size: 20px;
 }
 
+
+
+
 /* best seller product show */
 
-.productItem {
-  width: 100%;
-  height: auto;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  position: relative;
+.product_row {
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
-.productItem .badge {
-  position: absolute;
-  display: inline-block;
-  padding: 7px 10px;
-  top: 10px;
-  left: 10px;
-}
-
-.badge-primary {
-  background: #7a55c1 !important;
-}
-
-.productItem .action {
-  position: absolute;
-  top: 20px;
-  right: -100%;
-  z-index: 100;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  transition: all 0.5s ease-in-out;
-}
-
-.productItem .action button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 40px;
-  height: 40px;
-  width: 40px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  background: #fff !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 12%), 0 1px 2px rgba(0, 0, 0, 24%);
-  transition: all 0.0s ease-in-out;
-}
-
-.productItem .action button svg {
-  color: #000;
-  opacity: 0.7;
-  pointer-events: none;
-  font-size: 15px;
-}
-
-.productItem .action button:hover {
-  background: #7a55c1 !important;
-}
-
-.productItem .action button:hover svg {
-  color: #fff !important;
-}
-
-.productItem .imgWrapper {
-  overflow: hidden;
-}
-
-.productItem .imgWrapper img {
-  transition: all 0.3s ease-in-out;
-}
-
-.productItem .imgWrapper:hover img {
-  transform: scale(1.1);
-}
-
-
-.productItem {
-  transition: all 0.3s ease-in-out;
-}
-
-.productItem:hover {
-  transform: scale(1);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  border-radius: 10px;
-}
-
-
-
-.productItem .imgWrapper:hover .action {
-  opacity: 1;
-  right: 10px;
-}
-
-.productItem .info {
-  padding: 15px;
-}
-
-.productItem .info h4 {
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.productItem .info .oldPrice {
-  font-size: 16px;
-  font-weight: bold;
-  color: rgba(0, 0, 0, 0.2);
-  text-decoration: line-through;
-}
-
-.productItem .info .netPrice {
-  font-size: 16px;
-  font-weight: bold;
+.product_row .swiper {
+  padding-right: 80px !important;
 }
 
 .product_row .productItem {
-  border-right: 1px solid transparent;
+  border-right: 1px solid transparent !important;
 }
 
 
 .product_row .swiper-slide:last-child .productItem {
   border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.product_row .swiper-wrapper {
+  display: flex;
+  gap: 10px;
+  padding: 5px 10px;
+}
+
+.product_row .swiper-slide {
+  padding: 15px 0 !important;
+}
+
+
+.swiper-button-prev {
+  left: 10px !important;
+}
+
+.swiper-button-next {
+  right: 10px !important;
 }
 
 .swiper-button-prev,
@@ -602,33 +565,24 @@ nav .navPart2 ul li:hover .subMenu {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30px !important;
-  height: 30px !important;
-  background: #fff;
+  width: 40px !important;
+  height: 40px !important;
+  background: #ada1a1 !important;
   border-radius: 100%;
   font-family: FontAwesome !important;
   font-weight: bold;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 12%), 0 1px 2px rgba(0, 0, 0, 24%);
 }
 
-.swiper-button-prev:after,
-.swiper-button-next:after {
-  font-size: 15px !important;
-  border-radius: 100% !important;
-}
-
-
-.swiper-button-prev {
-  left: 0px;
-}
-
-.swiper-button-next {
-  right: 0px;
-}
-
 .swiper {
   padding-right: 2px !important;
 }
+
+
+
+
+
+
 
 /* new products */
 

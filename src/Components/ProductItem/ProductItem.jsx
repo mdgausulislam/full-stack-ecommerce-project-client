@@ -27,7 +27,7 @@ const ProductItem = (props) => {
                 <div className="imgWrapper">
                     <img src={productImg1} alt="product Imgage" className='w-100' />
                     <span className="badge badge-primary">26%</span>
-                    <div className="action">
+                    <div className="actions">
                         <Button onClick={() => viewProductDetails(1)}><AiOutlineFullscreen /></Button>
                         <Button><FaRegHeart style={{ fontSize: '20px' }} /></Button>
                     </div>
