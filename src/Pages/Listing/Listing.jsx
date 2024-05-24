@@ -29,7 +29,7 @@ const Listing = () => {
     };
     return (
         <div className='product_Listing_Page'>
-            <div className="container">
+            <div className="container-fluid">
                 <div className="productListing d-flex">
                     <SideBar />
 
@@ -90,8 +90,8 @@ const Listing = () => {
                             <ProductItem itemVIew={productView} />
                         </div>
 
-                        <div className="d-flex align-items-center justify-items-center mt-5" size="large">
-                            <Pagination count={10} color="primary" />
+                        <div className="paginationWrapper mt-5">
+                            <Pagination count={10} color="primary" size="large" />
                         </div>
                     </div>
                 </div>

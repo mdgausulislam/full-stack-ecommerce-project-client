@@ -24,7 +24,7 @@ const SignIn = () => {
                     </div>
 
                     <form className='mt-2' action="">
-                        <h2>Sign In</h2>
+                        <h2 className='mb-3'>Sign In</h2>
                         <div className="from-group">
                             <TextField id="standard-basic" label="Email"
                                 type='email'

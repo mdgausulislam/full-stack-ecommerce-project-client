@@ -20,7 +20,7 @@ const ProductDetails = () => {
     return (
         <>
             <section className="productDetails section">
-                <div className="container">
+                <div className="container-fluid">
                     <div className="row">
                         <div className="col-md-4 pl-5">
                             <ProductZoom />

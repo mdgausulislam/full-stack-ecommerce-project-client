@@ -9,7 +9,7 @@ import './HomeBanner.css';
 
 const HomeBanner = () => {
     return (
-        <div className="container mt-3">
+        <div className="container-fluid mt-3">
             <div className='homeBannerSection'>
                 <Swiper
                     slidesPerView={1}

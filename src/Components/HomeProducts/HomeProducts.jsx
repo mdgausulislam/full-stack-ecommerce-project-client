@@ -14,7 +14,7 @@ import 'swiper/css/navigation';
 const HomeProducts = () => {
     return (
         <section className="homeProducts">
-            <div className="container">
+            <div className="container-fluid">
                 <div className="row">
                     <div className="col-md-3">
                         <div className="sticky">

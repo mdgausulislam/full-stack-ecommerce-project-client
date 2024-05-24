@@ -164,3 +164,8 @@
 .productListing .productItem.one .imgWrapper {
     width: 25%;
 }
+
+.paginationWrapper {
+    display: flex;
+    justify-content: center;
+}

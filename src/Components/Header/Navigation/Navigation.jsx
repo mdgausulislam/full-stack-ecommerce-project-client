@@ -10,7 +10,7 @@ const Navigation = () => {
     const [isOpenSidebarVal, setisOpenSidebarNav] = useState(true);
     return (
         <nav>
-            <div className="container">
+            <div className="container-fluid">
                 <div className="row">
                     <div className="col-sm-2 navPart1">
                         <div className="catWrapper">

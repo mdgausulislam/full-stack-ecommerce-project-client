@@ -32,7 +32,7 @@ const HomeCategory = () => {
 
     return (
         <section className="homeCategory">
-            <div className="container">
+            <div className="container-fluid">
                 <h3 className='mb-4 hd'>Featured Categories</h3>
                 <Swiper
                     slidesPerView={9}

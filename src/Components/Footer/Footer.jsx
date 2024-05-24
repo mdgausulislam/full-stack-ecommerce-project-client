@@ -12,7 +12,7 @@ import { CiTwitter } from "react-icons/ci";
 const Footer = () => {
     return (
         <footer>
-            <div className="container">
+            <div className="container-fluid">
                 <div className="topInfo row">
                     <div className="col d-flex align-items-center">
                         <span><LuShirt /></span>
