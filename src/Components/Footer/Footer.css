@@ -50,7 +50,7 @@ footer .linkswrap ul li a:hover {
     text-decoration: none;
 }
 
-footer .copyright ul li a {
+.socials li a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,16 +61,16 @@ footer .copyright ul li a {
     transition: all 0.3s;
 }
 
-footer .copyright ul li a svg {
+.socials li a svg {
     font-size: 16px;
     color: rgba(0, 0, 0, 0.8);
 }
 
-footer .copyright ul li a:hover {
+.socials li a:hover {
     background: #7a55c1;
 
 }
 
-footer .copyright ul li a:hover svg {
+.socials li a:hover svg {
     color: #fff !important;
 }
