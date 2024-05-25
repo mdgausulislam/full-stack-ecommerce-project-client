@@ -1,12 +1,9 @@
 const { Category } = require('../models/category');
-const cloudinary = require('cloudinary').v2;
 const mongoose = require('mongoose')
+const cloudinary = require('../utilities/cloudinary')
 
-cloudinary.config({
-    cloud_name: process.env.Cloudinary_Config_Cloud_Name,
-    api_key: process.env.Cloudinary_Config_api_key,
-    api_secret: process.env.Cloudinary_Config_api_secret,
-});
+
+
 
 const createCategories = async (req, res) => {
     // Dynamically import p-limit
